@@ -1,0 +1,206 @@
+/* Fonts: Inter and Manrope */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Manrope:wght@600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+body {
+  background: linear-gradient(124.93deg, #f5fcfe 0%, #fffcf4 99.63%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  padding: 40px 50px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 4px 4px 25px rgba(14, 76, 121, 0.18);
+  margin: 151px 32px 151px 32px;
+  text-align: center;
+}
+
+.logo {
+  width: 128px;
+}
+.form__heading {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+  text-align: center;
+  color: #2b689b;
+  margin-top: 40px;
+}
+.form__input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #2b689b;
+  font-size: 18px;
+  padding-left: 25px;
+  padding-bottom: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  margin-top: 40px;
+}
+.form__input::placeholder {
+  color: #6b95b9;
+}
+.input_box {
+  position: relative;
+}
+.input_field_elem {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #ffb6c1;
+}
+.form__icon_eye {
+  position: absolute;
+  bottom: 16.5px;
+  right: 6.25px;
+  cursor: pointer;
+}
+
+.form__instruction {
+  align-self: start;
+  padding-left: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #2b689b;
+  margin-top: 30px;
+  text-align: start;
+}
+.form__instruction span {
+  color: #ffb6c1;
+}
+.form__button {
+  background: #ffd970;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  color: #0e406a;
+  padding: 20px 84px 20px 40px;
+  margin-top: 30px;
+  background-image: url("./assets/icons/arrow_icon.svg");
+  background-repeat: no-repeat;
+  background-position: 200px 27px;
+}
+.form__button:hover {
+  background: #ffe292;
+  background-image: url("./assets/icons/arrow_icon.svg");
+  background-repeat: no-repeat;
+  background-position: 200px 27px;
+}
+.form__links {
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+  align-items: center;
+}
+.form__links .form__link {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  margin-top: 30px;
+  font-weight: 600;
+  color: #2b689b;
+}
+.form__links .form__link:hover {
+  color: #3d7fb7;
+}
+/* JS */
+.error {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 140%;
+  color: #f13f58;
+  text-align: start;
+  padding-left: 11px;
+  margin-top: 5px;
+}
+
+/* Media queries */
+@media screen and (max-width: 414px) {
+  .container {
+    margin: 55px 32px 0 32px;
+    padding: 30px 20px;
+  }
+  .logo {
+    width: 106px;
+  }
+  .form__heading {
+    font-size: 20px;
+    line-height: 140%;
+    margin-top: 30px;
+  }
+  .form__input {
+    padding-left: 23px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    margin-top: 30px;
+  }
+  .input_field_elem {
+    bottom: 7px;
+  }
+  .error {
+    font-size: 13px;
+    padding-left: 7px;
+    margin-top: 5px;
+  }
+  .form__instruction {
+    align-self: start;
+    padding-left: 7px;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 30px;
+  }
+  .form__button {
+    font-size: 16px;
+    padding: 18px 74px 18px 30px;
+    background-image: url("./assets/icons/arrow_icon.svg");
+    background-repeat: no-repeat;
+    background-position: 180px 25px;
+  }
+  .form__button:hover {
+    background: #ffe292;
+    background-image: url("./assets/icons/arrow_icon.svg");
+    background-repeat: no-repeat;
+    background-position: 180px 25px;
+  }
+  .form__links {
+    gap: 20px;
+  }
+  .form__links .form__link {
+    font-size: 15px;
+    line-height: 140%;
+  }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тестовое задание</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img class="logo" src="./assets/images/logo.svg" alt="logo" />
+      <div class="form__heading">Изменение пароля</div>
+      <form action="#" name="change_password_form" class="form" method="post">
+        <div class="input_box">
+          <div class="input_field_elem">*</div>
+          <input
+            class="form__input"
+            type="text"
+            name="email"
+            placeholder="Email / Логин"
+            required
+          />
+        </div>
+        <div class="input_box">
+          <div class="input_field_elem">*</div>
+          <input
+            class="form__input"
+            id="control_string"
+            type="text"
+            name="control_string"
+            placeholder="Контрольная строка"
+            required
+          />
+        </div>
+        <div class="inputControlWordError error"></div>
+        <div class="input_box">
+          <div class="input_field_elem">*</div>
+          <input
+            class="form__input"
+            id="new_password"
+            type="password"
+            name="new_password"
+            placeholder="Новый пароль"
+            required
+          />
+          <img
+            class="form__icon_eye"
+            src="./assets/icons/eye_icon.svg"
+            alt="eye"
+          />
+        </div>
+
+        <div class="inputPasswordError error"></div>
+        <div class="input_box">
+          <div class="input_field_elem">*</div>
+          <input
+            class="form__input"
+            id="password_check"
+            type="password"
+            name="password_check"
+            placeholder="Подтверждение пароля"
+            required
+          />
+        </div>
+        <div class="inputPasswordCheckError error"></div>
+        <div class="form__instruction"><span>*</span> Обязательные поля</div>
+        <button class="form__button" type="submit">Изменить пароль</button>
+      </form>
+      <div class="form__links">
+        <a class="form__link" href="#">Зарегистрироваться</a>
+        <a class="form__link" href="#">Войти</a>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
