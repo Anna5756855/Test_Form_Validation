@@ -151,7 +151,7 @@ body {
 /* Media queries */
 @media screen and (max-width: 414px) {
   .container {
-    margin: 55px 32px 0 32px;
+    margin: 55px 32px 55px 32px;
     padding: 30px 20px;
   }
   .logo {
